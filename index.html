@@ -1,0 +1,43 @@
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <script src="script.js"></script>
+        <div class="container" style="background:#E5AD5D;width:300px;height:550px">
+    <div class="container-fluid" style="background:#4D3634;width:220px;height:460px; margin-top: 20px">
+    <div style="height:200px">
+    <div class="container-fluid" style="border:5px solid #B1A7B3; background:#F1EFF1;height:160px;margin:10px" id="border">
+        <h1 id="timer" style="text-align:center">00:00</h1>
+    </div>
+    <h3 id="heading" style="text-align:center;color:white">Session 1</h1>
+    </div>     
+    <hr style="border-top: dotted 1px;color:grey" />
+    
+     <div style="height:120px;text-align:center">
+         <span style="color:white;margin:8px;font-size:12px;margin-top:15px">Session time</span>
+         <span style="color:white;margin:8px;font-size:12px;margin-top:15px">Break time</span>
+         <br><br>
+         <span style="color:blue;font-size:14px;margin-left:10px" id="session_time">10</span><span style="color:blue;margin:2px;font-size:14px">mins</span>
+         <span style="color:orange;margin-left:10px;font-size:14px" id="break_time">5</span><span style="color:orange;margin:2px;font-size:14px">mins</span>
+         <br><br>
+        <button style="background-color: #555555;margin-right:4px;color:white" id="s_m" onclick="s_m()"> - </button>
+    <button style="background-color: #555555;margin-right:10px;color:white" id="s_a" onclick="s_a()">+</button> 
+    <button style="background-color: #555555;margin-right:4px;color:white" id="b_m" onclick="b_m()"> - </button>
+    <button style="background-color: #555555;margin:4px;color:white" id="b_a" onclick="b_a()">+</button> 
+     </div>
+
+    <hr style="border-top: dotted 1px;color:grey"/>
+    <div style="height:40px; text-align:center" class="container-fluid">
+    <button style="background-color: #555555;margin:10px;color:white" id="start" onclick="start()"> Start </button>
+    <button style="background-color: #555555;margin:10px;color:white;display:none" id="pause" onclick="pause()"> Pause </button>
+    <button style="background-color: #555555;margin:10px;color:white" id="reset" onclick="reset()"> Reset </button>
+    </div>
+    </div>
+        </div>
+</body>
